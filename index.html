@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- SOLUTION 1
     <h2 id="text" style="color: crimson;">Stiamo calcolando il prezzo del biglietto</h2>
 
     <div id="km-scelti"></div>
@@ -26,15 +27,51 @@
           <th>Sconto</th>
           <th>Prezzo per Km</th>
         </tr>
-        <tr style="text-align:center" id="row-no-discount">
-            <td>&gt; 18 anni &lt; 65 anni</td>
-            <td> / </td>
-            <td>0.210 €/km</td>
-          </tr>
         <tr style="text-align:center" id="row-young-discount"> 
           <td>&lt; 18 anni</td>
           <td>20 %</td>
           <td>0.168 €/km</td>
+        </tr>
+        <tr style="text-align:center" id="row-no-discount">
+            <td>&gt; 18 anni &lt; 65 anni</td>
+            <td> / </td>
+            <td>0.210 €/km</td>
+        </tr>
+        <tr style="text-align:center" id="row-old-discount">
+            <td>&gt;= 65 anni</td>
+            <td>40 %</td>
+            <td>0.126 €/km</td>
+        </tr>
+    </table> -->
+
+    <!-- SOLUTION 2 -->
+    <h2 id="text" style="color: crimson;">Stiamo calcolando il prezzo del biglietto</h2>
+
+    <div id="km-scelti"></div>
+    <div id="eta"></div>
+    <div><strong id="user-ticket"></strong></div>
+
+    <br>
+
+    <div>Informazioni utili:</div>
+
+    <br>
+
+    <table style="width:40%">
+        <tr>
+          <th>Età</th>
+          <th>Sconto</th>
+          <th>Prezzo per Km</th>
+        </tr>
+        <tr style="text-align:center" id="row-young-discount"> 
+          <td>&lt; 18 anni</td>
+          <td>20 %</td>
+          <td>0.168 €/km</td>
+        </tr>
+        <tr style="text-align:center" id="row-no-discount">
+            <td>&gt; 18 anni &lt; 65 anni</td>
+            <td> / </td>
+            <td>0.210 €/km</td>
         </tr>
         <tr style="text-align:center" id="row-old-discount">
             <td>&gt;= 65 anni</td>
